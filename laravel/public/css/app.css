@@ -11356,3 +11356,9 @@ a.text-dark:focus {
   }
 }
 
+.title {
+  color: green;
+  border: 1px solid black;
+  background-color: rgba(85, 26, 119, 0.548);
+}
+
