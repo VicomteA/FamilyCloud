@@ -11362,3 +11362,10 @@ a.text-dark:focus {
   background-color: rgba(85, 26, 119, 0.548);
 }
 
+.teest {
+  background-color: green;
+  border: 1px solid black;
+  color: black;
+  font-weight: bold;
+}
+
