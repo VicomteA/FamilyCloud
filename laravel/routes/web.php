@@ -19,6 +19,6 @@ Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 
 
-Route::get('image/upload','ImageUploadController@fileCreate');
+Route::get('image/upload','ImageUploadController@fileCreate')->name('upload');
 Route::post('image/upload/store','ImageUploadController@fileStore');
 Route::post('image/delete','ImageUploadController@fileDestroy');
