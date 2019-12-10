@@ -11356,16 +11356,36 @@ a.text-dark:focus {
   }
 }
 
-.title {
-  color: green;
-  border: 1px solid black;
-  background-color: rgba(85, 26, 119, 0.548);
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #53bcd8;
+  font-family: "PT Sans", sans-serif;
 }
 
-.teest {
-  background-color: green;
+.banniere {
+  background-color: #db7253;
+  text-align: center;
+  border-bottom: 3px solid black;
+}
+
+.banniere h1 {
+  margin: 0;
+  padding: 10px 0;
+}
+
+.authentification {
+  text-align: center;
+  background-color: white;
   border: 1px solid black;
+  border-radius: 30px;
+}
+
+.authentification a {
   color: black;
-  font-weight: bold;
+}
+
+.authentification a:hover {
+  color: blue;
 }
 
