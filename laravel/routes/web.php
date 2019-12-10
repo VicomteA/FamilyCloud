@@ -16,4 +16,13 @@ Route::get('/', 'PagesController@index')->name('index');
 
 Auth::routes();
 
+Route::get('/profile', 'UserController@profile')->name('profile');
+Route::post('/profile', 'UserController@update_avatar');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
+
+Auth::routes();
+
 Route::get('/home', 'HomeController@index')->name('home');
