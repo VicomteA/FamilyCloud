@@ -17,3 +17,8 @@ Route::get('/', 'PagesController@index')->name('index');
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+
+Route::get('image/upload','ImageUploadController@fileCreate');
+Route::post('image/upload/store','ImageUploadController@fileStore');
+Route::post('image/delete','ImageUploadController@fileDestroy');
