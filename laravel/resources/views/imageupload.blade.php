@@ -17,6 +17,7 @@
                     var time = dt.getTime();
                    return time+file.name;
                 },
+                dictDefaultMessage: "Glissez-Déposez vos images ici",
                 acceptedFiles: ".jpeg,.jpg,.png,.gif",
                 addRemoveLinks: true,
                 timeout: 5000,
