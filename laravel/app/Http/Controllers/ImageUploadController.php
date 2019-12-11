@@ -7,6 +7,11 @@ use App\ImageUpload;
 
 class ImageUploadController extends Controller
 {
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
+
     public function fileCreate()
     {
         return view('imageupload');
@@ -17,7 +22,7 @@ class ImageUploadController extends Controller
         $image = $request->file('file');
         $imageName = $image->getClientOriginalName();
         $image->move(public_path('images'),$imageName);
-        
+
         $imageUpload = new ImageUpload();
         $imageUpload->filename = $imageName;
         $imageUpload->save();
