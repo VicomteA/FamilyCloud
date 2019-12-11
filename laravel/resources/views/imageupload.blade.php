@@ -3,7 +3,7 @@
 @section('content')
 <div class="container">
        
-        <h3 class="jumbotron">Dropzone</h3>
+        <h3 class="jumbotron">Zone de dépôt</h3>
         <form method="post" action="{{url('image/upload/store')}}" enctype="multipart/form-data" class="dropzone" id="dropzone">
         @csrf
 </div>
