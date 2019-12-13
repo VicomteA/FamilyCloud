@@ -7,15 +7,15 @@
             <div class="card">
                 <div class="card-header">Dashboard</div>
 
-                <div class="card-body">
-                    @if (session('status'))
-                        <div class="alert alert-success" role="alert">
-                            {{ session('status') }}
-                        </div>
-                    @endif
-
-                    You are logged in!
-                </div>
+                @foreach($image as $images)
+                    <div class="card" id="image">
+                        <a href="{{ url('images/' . $image->name) }}" class="image-link">
+                            <img class="card-img-top"
+                                 src="{{ url('thumbs/' . $image->name) }}"
+                                 alt="image">
+                        </a>
+                    </div>
+                @endforeach
             </div>
         </div>
     </div>

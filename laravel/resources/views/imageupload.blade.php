@@ -2,12 +2,12 @@
 
 @section('content')
 <div class="container">
-       
+
         <h3 class="jumbotron">Dropzone</h3>
         <form method="post" action="{{url('image/upload/store')}}" enctype="multipart/form-data" class="dropzone" id="dropzone">
         @csrf
 </div>
-        </form>   
+        </form>
         <script type="application/javascript">
             Dropzone.options.dropzone =
              {
@@ -17,10 +17,11 @@
                     var time = dt.getTime();
                    return time+file.name;
                 },
+                 dictDefaultMessage: "Mettez vos images ici",
                 acceptedFiles: ".jpeg,.jpg,.png,.gif",
                 addRemoveLinks: true,
                 timeout: 5000,
-                success: function(file, response) 
+                success: function(file, response)
                 {
                     console.log(response);
                 },
