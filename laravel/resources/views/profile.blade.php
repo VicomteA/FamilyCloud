@@ -8,7 +8,7 @@
            <h2>Profil de {{ $user->name }}</h2>
            <form enctype="multipart/form-data" action="/profile" method="post">
                 <label>Changer votre photo de profil</label>
-                </br>
+                <br>
                 <input type="file" name="avatar">
                 <input type="hidden" name="_token" value="{{ csrf_token() }}">
                 <input type="submit" class="pull-right btn btn-sm btn-primary">
