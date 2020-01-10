@@ -11359,33 +11359,163 @@ a.text-dark:focus {
 body {
   margin: 0;
   padding: 0;
-  background-color: #53bcd8;
   font-family: "PT Sans", sans-serif;
 }
 
-.banniere {
-  background-color: #db7253;
-  text-align: center;
-  border-bottom: 3px solid black;
+@media (max-width: 767.98px) {
+  body h1 {
+    font-size: 32px;
+  }
+
+  body h2 {
+    font-size: 22px;
+  }
+
+  body p {
+    font-size: 16px;
+  }
 }
 
-.banniere h1 {
+@media (min-width: 768px) and (max-width: 991.98px) {
+  body h1 {
+    font-size: 50px;
+  }
+
+  body h2 {
+    font-size: 26px;
+  }
+
+  body p {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  body h1 {
+    font-size: 85px;
+  }
+
+  body h2 {
+    font-size: 36px;
+  }
+
+  body p {
+    font-size: 20px;
+  }
+
+  body a {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 1200px) {
+  body h1 {
+    font-size: 90px;
+  }
+
+  body h2 {
+    font-size: 40px;
+  }
+
+  body p {
+    font-size: 20px;
+  }
+
+  body a {
+    font-size: 20px;
+  }
+}
+
+.pagePresentation {
+  background-image: url("https://cdn.discordapp.com/attachments/651772309581070379/665144501341257751/office-620822.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  text-align: center;
+  color: white;
+}
+
+.pagePresentation h1 {
+  padding-top: 50px;
   margin: 0;
-  padding: 10px 0;
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .pagePresentation h1 {
+    padding-top: 70px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .pagePresentation h1 {
+    padding-top: 90px;
+  }
+}
+
+.pagePresentation h2 {
+  padding-top: 50px;
+  margin: 0;
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .pagePresentation h2 {
+    padding-top: 90px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .pagePresentation h2 {
+    padding-top: 150px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .pagePresentation h2 {
+    padding-top: 180px;
+  }
+}
+
+.pagePresentation p {
+  padding-top: 100px;
+  margin: 0;
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .pagePresentation p {
+    padding-top: 130px;
+  }
 }
 
 .authentification {
+  padding-top: 130px;
   text-align: center;
+}
+
+.authentification .bouton-auth {
+  color: black;
   background-color: white;
   border: 1px solid black;
   border-radius: 30px;
+  padding: 8px;
 }
 
-.authentification a {
-  color: black;
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .authentification .bouton-auth {
+    padding: 15px;
+  }
 }
 
-.authentification a:hover {
-  color: blue;
+@media (min-width: 1200px) {
+  .authentification .bouton-auth {
+    padding: 18px;
+  }
+}
+
+.authentification .bouton-auth:hover {
+  color: white;
+  text-decoration: none;
+  background-color: black;
+  border: 1px solid white;
 }
 
