@@ -14,28 +14,40 @@
 
 </head>
 
-<body>
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-12 banniere">
+<body class="pagePresentation">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-10">
                 <h1>Family Cloud</h1>
             </div>
-        </div><br>
-        <div class="row">
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-12">
+                <h2>Partagez en toute simplicité</h2>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-12">
+                <p>Que ce soit en famille ou entre amis, partagez ces moments qui vous ont fait vibrer.</p>
+            </div>
+        </div>
+        <div class="row authentification">
             @if (Route::has('login'))
-            <div class="col-6 offset-3 authentification">
-                @auth
-                <a href="{{ url('/home') }}">Accueil</a>
-                @else
-                <a href="{{ route('login') }}">Connexion</a><br>
-
-                @if (Route::has('register'))
-                <a href="{{ route('register') }}">Inscription</a>
+            @auth
+            <a href="{{ url('/home') }}">Accueil</a>
+            @else
+            <div class="col-4">
+                <a class="bouton-auth" href="{{ route('login') }}">Connexion</a><br>
+            </div>
+            @if (Route::has('register'))
+            <div class="col-4 offset-4">
+                <a class="bouton-auth" href="{{ route('register') }}">Inscription</a>
                 @endif
                 @endauth
             </div>
-            @endif
         </div>
+        @endif
+    </div>
     </div>
 </body>
 
