@@ -40,7 +40,7 @@ class FileController extends Controller
             'file' => 'required|file|max:20000'
         ]);
         $upload = $request->file('file');
-        $path = $upload->store('public/storage');
+        $path = $upload->store('public/files');
         $file = File::create([
             'title' => $upload->getClientOriginalName(),
             'description' => '',
