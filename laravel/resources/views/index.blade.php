@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Laravel</title>
+    <title>FamilyCloud</title>
 
     <link rel="stylesheet" type="text/css" href="css/app.css">
 
@@ -18,7 +18,7 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-12 banniere">
-                <h1>Family Cloud</h1>
+                <h1>FamilyCloud</h1>
             </div>
         </div><br>
         <div class="row">

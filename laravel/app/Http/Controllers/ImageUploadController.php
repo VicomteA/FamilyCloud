@@ -23,4 +23,9 @@ class ImageUploadController extends Controller
         $imageUpload->save();
         return response()->json(['success'=>$imageName]);
     }
+
+    public function fileDestroy()
+    {
+        
+    }
 }

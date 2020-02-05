@@ -31,3 +31,7 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::get('image/upload','ImageUploadController@fileCreate')->name('upload');
 Route::post('image/upload/store','ImageUploadController@fileStore');
 Route::post('image/delete','ImageUploadController@fileDestroy');
+
+Route::get('/file','FileController@index')->name('viewfile');
+Route::get('/file/upload','FileController@create')->name('formfile');
+Route::post('/file/upload','FileController@store')->name('uploadfile');

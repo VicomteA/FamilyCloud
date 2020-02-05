@@ -11359,12 +11359,12 @@ a.text-dark:focus {
 body {
   margin: 0;
   padding: 0;
-  background-color: #53bcd8;
+  background-color: white;
   font-family: "PT Sans", sans-serif;
 }
 
 .banniere {
-  background-color: #db7253;
+  background-color: grey;
   text-align: center;
   border-bottom: 3px solid black;
 }
