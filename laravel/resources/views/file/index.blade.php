@@ -7,7 +7,7 @@
         </div>
     @endif
     <p>
-        <a href="{{ route('formfile') }}" class="btn btn-primary">Upload file</a>
+        <a href="{{ route('formfile') }}" class="btn btn-primary">Upload une photo</a>
     </p>
     <div class="row">
         @foreach($files as $file)
@@ -17,6 +17,11 @@
                 <div class="card-body">
                     <strong class="card-title">{{ $file->title }}</strong>
                     <p class="card-text">{{ $file->created_at->diffForHumans() }}</p>
+                    <form action="{{ route('deletefile', $file->id) }}" method="post">
+                        @csrf
+                        @method('DELETE')
+                        <button type="submit" class="btn btn-danger">Supprimer</button>
+                    </form>
                 </div>
             </div>
         </div>
