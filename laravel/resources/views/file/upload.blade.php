@@ -1,5 +1,6 @@
 @extends('layouts.app')
 @section('content')
+@auth
 <div class="container">
     <div class="row">
         <div class="col-md-6 col-md-offset-4">
@@ -19,4 +20,5 @@
         </div>
     </div>
 </div>
+@endauth
 @endsection

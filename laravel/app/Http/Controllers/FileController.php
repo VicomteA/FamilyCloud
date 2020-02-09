@@ -48,7 +48,7 @@ class FileController extends Controller
             'path' => $path
         ]);
 
-        return redirect('/file')->with('success', 'File uploaded');
+        return redirect('/file')->with('success', 'La photo a été envoyé');
     }
 
     /**

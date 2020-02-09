@@ -17,7 +17,7 @@ class CreateFilesTable extends Migration
             $table->bigIncrements('id');
             $table->string('title');
             $table->string('path');
-            $table->string('description')->default('no description');
+            $table->string('description');
             $table->timestamps();
         });
     }

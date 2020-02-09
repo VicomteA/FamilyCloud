@@ -6,8 +6,9 @@
             <strong>{{ session('success') }}</strong>
         </div>
     @endif
+    @auth
     <p>
-        <a href="{{ route('formfile') }}" class="btn btn-primary">Upload une photo</a>
+        <a href="{{ route('formfile') }}" class="btn btn-primary">Envoyer une photo</a>
     </p>
     <div class="row">
         @foreach($files as $file)
@@ -27,5 +28,6 @@
         </div>
         @endforeach
     </div>
+    @endauth
 </div>
 @endsection
